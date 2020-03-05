@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tracker.view.MainViewController">
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+               <image>
+                  <Image url="@bck.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="startButton" blendMode="OVERLAY" layoutX="238.0" layoutY="141.0" mnemonicParsing="false" onAction="#srart" prefHeight="36.0" prefWidth="99.0" text="Login">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font></Button>
+            <Button fx:id="register" blendMode="OVERLAY" layoutX="239.0" layoutY="200.0" mnemonicParsing="false" onAction="#register" prefHeight="36.0" prefWidth="99.0" text="Register">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

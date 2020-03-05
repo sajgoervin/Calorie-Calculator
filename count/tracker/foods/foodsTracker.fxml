@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tracker.foods.UserItemsController">
+   <bottom>
+      <AnchorPane prefHeight="398.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+               <image>
+                  <Image url="@bck.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="39.0" prefHeight="31.0" prefWidth="81.0" text="Breakfast">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font></Label>
+            <Label layoutX="72.0" layoutY="113.0" prefHeight="25.0" prefWidth="76.0" text="Lunch" />
+            <Label layoutX="72.0" layoutY="186.0" prefHeight="22.0" prefWidth="62.0" text="Dinner">
+               <font>
+                  <Font name="Century" size="11.0" />
+               </font></Label>
+            <Label layoutX="72.0" layoutY="262.0" prefHeight="20.0" prefWidth="42.0" text="Snacks" />
+            <Button fx:id="addFood" blendMode="OVERLAY" layoutX="280.0" layoutY="70.0" mnemonicParsing="false" onAction="#trackFood" text="Add food" />
+            <Button fx:id="addFood1" blendMode="OVERLAY" layoutX="280.0" layoutY="138.0" mnemonicParsing="false" onAction="#trackFood1" text="Add food" />
+            <Button fx:id="addFood2" blendMode="OVERLAY" layoutX="280.0" layoutY="219.0" mnemonicParsing="false" onAction="#trackFood2" text="Add food" />
+            <TextField fx:id="breakfast" layoutX="69.0" layoutY="70.0" prefHeight="18.0" prefWidth="149.0" />
+            <TextField fx:id="serving" layoutX="233.0" layoutY="70.0" prefHeight="25.0" prefWidth="26.0" />
+            <Label layoutX="227.0" layoutY="46.0" prefHeight="17.0" prefWidth="54.0" text="servings:">
+               <font>
+                  <Font name="Century" size="11.0" />
+               </font></Label>
+            <TextField fx:id="lunch" layoutX="69.0" layoutY="138.0" />
+            <TextField fx:id="serving1" layoutX="234.0" layoutY="138.0" prefHeight="25.0" prefWidth="26.0" />
+            <Label layoutX="228.0" layoutY="113.0" prefHeight="17.0" prefWidth="51.0" text="servings:">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font></Label>
+            <TextField fx:id="dinner" layoutX="69.0" layoutY="219.0" />
+            <TextField fx:id="serving2" layoutX="234.0" layoutY="219.0" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="snack" layoutX="69.0" layoutY="294.0" />
+            <TextField fx:id="serving3" layoutX="237.0" layoutY="294.0" prefHeight="25.0" prefWidth="27.0" />
+            <Label layoutX="229.0" layoutY="189.0" prefHeight="17.0" prefWidth="50.0" text="servings:">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font></Label>
+            <Label layoutX="230.0" layoutY="264.0" prefHeight="17.0" prefWidth="53.0" text="servings:" />
+            <Button fx:id="addFood3" blendMode="OVERLAY" layoutX="281.0" layoutY="294.0" mnemonicParsing="false" onAction="#trackFood3" prefHeight="25.0" prefWidth="67.0" text="Add food" />
+            <Label layoutX="411.0" layoutY="87.0" prefHeight="17.0" prefWidth="149.0" text="Total Calories Consumed:">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="totalCalories" layoutX="431.0" layoutY="113.0" prefHeight="17.0" prefWidth="116.0">
+               <font>
+                  <Font name="Bodoni MT" size="29.0" />
+               </font></Label>
+            <Button fx:id="backLogin" blendMode="OVERLAY" layoutX="447.0" layoutY="294.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="25.0" prefWidth="101.0" text="Back to Login">
+               <font>
+                  <Font name="Bodoni MT" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
